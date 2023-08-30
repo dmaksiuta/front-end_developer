@@ -4,11 +4,20 @@ $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
 
+
 :root {
-	--ff: 'Poppins', sans-serif;
+	--ff: 'Unica One', cursive;
+	--ff-second: 'Vollkorn', serif;
 	--transition: .2s all ease-in-out;
 
-	--c-primary: #0b8fed;
+	--header-link: #F5F5F5;
+	--main-title: #F5F5F5;
+
+	--c-primary: #F9CE37;
 	--c-text-white: #fff;
 	--c-border: #eee;
+
+	--c-text: #D9D9D9;
+
+	--body-bg: #1B1C21;
 }

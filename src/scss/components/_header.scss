@@ -2,8 +2,32 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px;
-	border-bottom: 1px solid var(--c-border);
+	padding-top: 0;
+	padding-bottom: 0;
+
+	&__logo {
+		border-radius: 0px 0px 30px 30px;
+		background: #F9CE37;
+		padding: 35px 18px;
+		position: relative;
+		color: #353535;
+		font-family: var(--ff-second);
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		div:last-child {
+			color: var(--header-link);
+			font-family: var(--ff);
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: lowercase;
+			position: absolute;
+			bottom: 24px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 
 	&__backdrop {
 		background: rgba(0, 0, 0, 0.6);
@@ -27,11 +51,16 @@
 			transform: translateX(0);
 		}
 	}
+	&__social {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
 
 	&__ul {
 		display: flex;
 		align-items: center;
-		gap: 20px;
+		gap: 56px;
 		z-index: 9;
 
 		@include tablet {
@@ -62,6 +91,31 @@
 	}
 
 	&__a {
+		color: var(--header-link);
+		font-family: var(--ff);
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		position: relative;
+		&._active, &:hover {
+			&::before {
+				opacity: 1;
+			}
+		}
+		&::before {
+			content: '';
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+			position: absolute;
+			bottom: -10px;
+			transition: var(--transition);
+			background: var(--c-primary);
+			opacity: 0;
+		}
 		@include tablet {
 			color: var(--c-text-white);
 		}

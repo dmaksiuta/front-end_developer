@@ -1,12 +1,20 @@
-<header class="header">
-	<div class="header__logo">Start</div>
+<header class="header container">
+	<a href="/" class="header__logo">
+		<div>FRONT-END</div>
+		<div>developer</div>
+	</a>
 	<div class="header__nav">
 		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
 		<ul class="header__ul" id="headerUl">
-			<li class="header__li"><a class="header__a" href="/">Link 1</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 2</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 3</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 4</a></li>
+			<li class="header__li"><a class="header__a" href="/">About</a></li>
+			<li class="header__li"><a class="header__a _active" href="/">experience</a></li>
+			<li class="header__li"><a class="header__a" href="/">reviews</a></li>
+			<li class="header__li"><a class="header__a" href="/">contact</a></li>
+			<ul class="header__social">
+				<li class="header__li"><a href="/"><img src="./img/social/git.png" alt="social"></a></li>
+				<li class="header__li"><a href="/"><img src="./img/social/ln.png" alt="social"></a></li>
+				<li class="header__li"><a href="/"><img src="./img/social/telegram.png" alt="social"></a></li>
+			</ul>
 			<span class="material-icons icon-close" onclick="navToggle()">close</span>
 		</ul>
 		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>

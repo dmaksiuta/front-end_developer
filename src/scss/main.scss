@@ -11,9 +11,7 @@
 @import 'layout/grid';
 
 // components
+@import 'components/ui/btn';
 @import 'components/header';
 @import 'components/footer';
-
-
-// need to remove
-@import 'components/template';
+@import 'components/section-main';
