@@ -1,0 +1,93 @@
+.section-about {
+	margin-top: 110px;
+	margin-bottom: 72px;
+
+	&__title {
+		color: #F9CE37;
+		font-family: Unica One;
+		font-size: 53px;
+		font-weight: 400;
+		letter-spacing: 5.3px;
+		text-transform: uppercase;
+		margin-bottom: 80px;
+	}
+
+	&__row {
+		display: flex;
+		gap: 40px;
+	}
+
+	&__info {}
+
+	&__desc {
+		color: #D9D9D9;
+		font-family: Vollkorn;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 180%;
+		letter-spacing: 0.72px;
+		margin-bottom: 64px;
+	}
+
+	&__img {
+		max-width: 600px;
+		flex-shrink: 0;
+	}
+}
+
+.education {
+
+	&__header {
+		display: inline-flex;
+		align-items: center;
+		gap: 34px;
+		color: #F9CE37;
+		font-family: Unica One;
+		font-size: 36px;
+		font-weight: 400;
+		letter-spacing: 3.6px;
+		text-transform: uppercase;
+
+		span {
+			color: #F5F5F5;
+			font-size: 64px;
+			line-height: 180%;
+			letter-spacing: 2.56px;
+		}
+	}
+
+	&__footer {
+		color: #F5F5F5;
+		font-family: Unica One;
+		font-size: 64px;
+		font-weight: 400;
+		line-height: 180%;
+		letter-spacing: 2.56px;
+	}
+}
+
+.education-item {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+
+	&__icon {
+		color: #F9CE37;
+		font-family: Unica One;
+		font-size: 64px;
+		font-weight: 400;
+		line-height: 101px;
+		letter-spacing: 2.56px;
+		min-width: 42px;
+
+	}
+
+	&__text {
+		color: #D9D9D9;
+		font-family: Vollkorn;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 180%;
+		letter-spacing: 0.72px;
+	}
+}
