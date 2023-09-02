@@ -54,7 +54,7 @@ const plumberNotify = (title) => {
 
 gulp.task('html:prod', function () {
 	return gulp
-		.src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
+		.src(['./src/html/**/*.html', '!./src/html/components/*.html'])
 		.pipe(changed('./prod/'))
 		.pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))

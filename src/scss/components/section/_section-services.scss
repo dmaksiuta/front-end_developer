@@ -1,0 +1,37 @@
+.section-services {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: #242529;
+}
+
+.services {
+	padding-top: 0;
+	padding-bottom: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding-right: 24px;
+	gap: 40px;
+}
+
+.services-item {
+	border-radius: 30px;
+	background: #F5F5F5;
+	padding: 24px 31px;
+	gap: 16px;
+	display: grid;
+
+
+	&__icon {
+		text-align: center;
+	}
+
+	&__text {
+		color: #353535;
+		font-family: Unica One;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 180%;
+		text-transform: capitalize;
+	}
+
+}
