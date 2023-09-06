@@ -1,0 +1,123 @@
+.section-contacts {
+	padding-top: 110px;
+	padding-bottom: 110px;
+	background: url("../img/contacts-bg.png") center/cover no-repeat;
+
+	&__title {}
+}
+
+.map {
+	border-radius: 30px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(6px);
+	display: flex;
+	gap: 74px;
+
+	&__img {
+		flex-shrink: 0;
+		padding-left: 34px;
+		display: flex;
+		align-items: center;
+		max-width: 638px;
+	}
+
+	&__info {}
+
+	&__header {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 67px;
+		margin-bottom: 17px;
+	}
+
+	&__logo {
+		border-radius: 0px 0px 30px 30px;
+		background: #f9ce37;
+		display: inline-block;
+		padding: 35px 18px;
+		position: relative;
+		color: #353535;
+		font-family: var(--ff-second);
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		div:last-child {
+			color: var(--header-link);
+			font-family: var(--ff);
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: lowercase;
+			position: absolute;
+			bottom: 24px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.contact {
+	&__header {
+		display: inline-flex;
+		align-items: center;
+		gap: 27px;
+		color: #f9ce37;
+		font-family: Unica One;
+		font-size: 32px;
+		font-weight: 400;
+		letter-spacing: 3.2px;
+		text-transform: uppercase;
+
+		span {
+			color: #f5f5f5;
+			font-family: Unica One;
+			font-size: 60px;
+			font-weight: 400;
+			line-height: 180%;
+			letter-spacing: 2.4px;
+		}
+	}
+
+	&__desc {
+		color: #d9d9d9;
+		font-family: Unica One;
+		font-size: 16px;
+		font-weight: 400;
+		margin-bottom: 19px;
+	}
+
+	&__footer {
+		color: #f5f5f5;
+		font-family: Unica One;
+		font-size: 60px;
+		font-weight: 400;
+		line-height: 180%;
+		letter-spacing: 2.4px;
+		margin-bottom: 40px;
+	}
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	margin-bottom: 3px;
+
+	&__icon {
+		color: #F9CE37;
+		font-family: Unica One;
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 180%;
+		letter-spacing: 1.28px;
+	}
+
+	&__text {
+		color: #F5F5F5;
+		font-family: Unica One;
+		font-size: 24px;
+		font-weight: 400;
+		letter-spacing: 2.4px;
+		text-transform: uppercase;
+	}
+}

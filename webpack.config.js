@@ -2,7 +2,6 @@ const config = {
 	mode: 'production',
 	entry: {
 		index: './src/js/index.js',
-		carousel: './src/js/owl.carousel.min.js',
 		// about: './src/js/about.js',
 	},
 	output: {
