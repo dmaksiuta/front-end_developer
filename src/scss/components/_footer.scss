@@ -9,6 +9,13 @@
 	align-items: center;
 	justify-content: space-between;
 
+	@include tablet {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 100px;
+	}
+
 	&__logo {
 		max-width: 137px;
 		position: relative;
@@ -34,6 +41,12 @@
 		display: flex;
 		align-items: center;
 		gap: 56px;
+
+		@include mobile {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	&__a {

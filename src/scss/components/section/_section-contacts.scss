@@ -21,12 +21,24 @@
 	display: flex;
 	gap: 74px;
 
+	@include desktop-small {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		padding: 50px;
+		padding-top: 0;
+	}
+
 	&__img {
 		flex-shrink: 0;
 		padding-left: 34px;
 		display: flex;
 		align-items: center;
 		max-width: 638px;
+		@include mobile {
+			padding-left: 0;
+			justify-content: center;
+		}
 	}
 
 	&__info {}
@@ -36,6 +48,11 @@
 		justify-content: flex-end;
 		padding-right: 67px;
 		margin-bottom: 17px;
+
+		@include mobile {
+			justify-content: center;
+			padding-right: 0;
+		}
 	}
 
 	&__logo {
@@ -49,6 +66,7 @@
 		font-size: 24px;
 		font-weight: 400;
 		text-transform: uppercase;
+
 
 		div:last-child {
 			color: var(--header-link);
@@ -76,6 +94,10 @@
 		letter-spacing: 3.2px;
 		text-transform: uppercase;
 
+		@include mobile {
+			font-size: 26px;
+		}
+
 		span {
 			color: #f5f5f5;
 			font-family: Unica One;
@@ -83,6 +105,10 @@
 			font-weight: 400;
 			line-height: 180%;
 			letter-spacing: 2.4px;
+
+			@include mobile {
+				font-size: 36px;
+			}
 		}
 	}
 
@@ -102,6 +128,11 @@
 		line-height: 180%;
 		letter-spacing: 2.4px;
 		margin-bottom: 40px;
+
+		@include mobile {
+			font-size: 36px;
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -127,5 +158,10 @@
 		font-weight: 400;
 		letter-spacing: 2.4px;
 		text-transform: uppercase;
+
+		@include mobile {
+			font-size: 16px;
+			letter-spacing: 0;
+		}
 	}
 }
